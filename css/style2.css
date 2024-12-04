@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,900;1,500&display=swap');
+
+:root {
+    --gris-clair: #e8e8e8;
+    --vert-1: #34ad90;
+    --vert-2: #54a93f;
+    --vert-3: #106861;
+    --rouge-clair: #f78b8b;
+    --degrade-btn: linear-gradient(135deg, #006cc2, #40ff09);
+    --degrade-btn-h: linear-gradient(135deg, #40ff09, #006cc2);
+    --bleu-1: #0973c7;
+    --bleu-2: #004aad;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: var(--gris-clair);
+    color: var(--bleu-2);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    max-width: 1000px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: var(--bleu-1);
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: var(--degrade-btn);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--degrade-btn-h);
+    cursor: pointer;
+}
+
+.exercice {
+    background: white;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.exercice:hover {
+    transform: translateY(-5px);
+}
+
+header {
+    background: var(--vert-1);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-bottom: 5px solid var(--bleu-2);
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+header button {
+    font-size: xx-large;
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+    color: var(--bleu-2);
+}
+
+.exercices {
+    margin-top: 30px;
+}
+
+.exercices h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question strong {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--bleu-1);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--gris-clair);
+    border: 1px solid var(--bleu-2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.option.correct {
+    background: var(--vert-2);
+    color: white;
+    border-color: var(--vert-2);
+}
+
+.option.wrong {
+    background: var(--rouge-clair);
+    color: white;
+    border-color: var(--rouge-clair);
+}
+
+.option.user-response {
+    font-weight: bold;
+    border: 2px dashed var(--bleu-1);
+}
+
+.score {
+    font-size: 1.2rem;
+    color: var(--bleu-2);
+    margin-bottom: 20px;
+}
+
+.legend {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.legend span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+}
+
+.legend .correct {
+    background: var(--vert-2);
+}
+
+.legend .wrong {
+    background: var(--rouge-clair);
+}
+
+.legend .user-response {
+    background: var(--bleu-1);
+}
